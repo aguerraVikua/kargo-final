@@ -8375,7 +8375,7 @@ class _UpdateContribuyenteWidgetState extends State<UpdateContribuyenteWidget> {
                                                   var taxpayerRecordReference =
                                                       TaxpayerRecord.collection
                                                           .doc();
-                                                  await taxpayerRecordReference
+                                                  taxpayerRecordReference
                                                       .set(taxpayerCreateData);
                                                   _model.tax = TaxpayerRecord
                                                       .getDocumentFromData(
@@ -8600,7 +8600,7 @@ class _UpdateContribuyenteWidgetState extends State<UpdateContribuyenteWidget> {
                                                         _model
                                                             .checkboxGroupIAEValues,
                                                   };
-                                                  await TaxpayersRecord
+                                                  TaxpayersRecord
                                                       .collection
                                                       .doc()
                                                       .set(taxpayersCreateData);

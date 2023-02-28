@@ -859,7 +859,7 @@ class _RegistroDeMultasWidgetState extends State<RegistroDeMultasWidget> {
                                             representativePosition: '',
                                             representativePhone: '',
                                           );
-                                          await CitationRecord.collection
+                                          CitationRecord.collection
                                               .doc()
                                               .set(citationCreateData);
                                         },
@@ -1802,7 +1802,7 @@ class _RegistroDeMultasWidgetState extends State<RegistroDeMultasWidget> {
                                                     'articlesAlcohol': _model
                                                         .checkboxGroupAlcoholValues,
                                                   };
-                                                  await FinesRecord.collection
+                                                  FinesRecord.collection
                                                       .doc()
                                                       .set(finesCreateData);
                                                   ScaffoldMessenger.of(context)

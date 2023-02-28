@@ -216,7 +216,7 @@ class _ListadoContribuyentesWidgetState
                                                     currentUserDocument?.cedula,
                                                     ''),
                                               );
-                                              await TaxPayerToVisitRecord
+                                              TaxPayerToVisitRecord
                                                   .collection
                                                   .doc()
                                                   .set(

@@ -8616,7 +8616,7 @@ class _RegistroContribuyenteWidgetState
                                               var taxpayerRecordReference =
                                                   TaxpayerRecord.collection
                                                       .doc();
-                                              await taxpayerRecordReference
+                                              taxpayerRecordReference
                                                   .set(taxpayerCreateData);
                                               _model.tax = TaxpayerRecord
                                                   .getDocumentFromData(
@@ -8825,7 +8825,7 @@ class _RegistroContribuyenteWidgetState
                                                     _model
                                                         .checkboxGroupIAEValues,
                                               };
-                                              await TaxpayersRecord.collection
+                                              TaxpayersRecord.collection
                                                   .doc()
                                                   .set(taxpayersCreateData);
                                               ScaffoldMessenger.of(context)

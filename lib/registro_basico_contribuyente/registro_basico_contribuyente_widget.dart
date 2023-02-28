@@ -1871,7 +1871,7 @@ class _RegistroBasicoContribuyenteWidgetState
                                                   currentUserLocationValue,
                                               reporter: currentUserReference,
                                             );
-                                            await TaxpayerRecord.collection
+                                            TaxpayerRecord.collection
                                                 .doc()
                                                 .set(taxpayerCreateData);
                                             ScaffoldMessenger.of(context)
